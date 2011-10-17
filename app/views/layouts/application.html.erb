@@ -1,14 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>TrainingPortal</title>
+  <title>atag coding dojos</title>
   <%= stylesheet_link_tag    "application" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
-<%= yield %>
+<div id="header">
+	<div id="menu">
+		<ul>
+
+			<li class="current_page_item"><a href="/home">home</a></li>
+			<li><a href="/sessions">sessions</a></li>
+			<li><a href="#">photos</a></li>
+			<li class="last"><a href="#">about</a></li>
+		</ul>
+	</div>
+</div>
+
+<div id="logo">
+	<h1>atag coding dojos </h1>
+	<h2>because practice makes perfection...</h2>
+</div>
+
+<div id="banner"></div>
+
+<div id="page">
+    <%= yield %>
+</div>
+
+<div id="footer">
+	<p id="legal">( c ) 2011. All Rights Reserved. ATAG Enterprise Architecture</p>
+</div>
 
 </body>
 </html>

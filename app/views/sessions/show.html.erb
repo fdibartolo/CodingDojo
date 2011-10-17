@@ -1,0 +1,26 @@
+<p id="notice"><%= notice %></p>
+
+<h1>about this coding dojo</h1>
+
+<br />
+Date:
+<strong><%= @session.date %></strong>
+
+<br />
+Start time:
+<strong><%= @session.start_time.strftime("%H:%M") %></strong>
+
+<br />
+End time:
+<strong><%= @session.end_time.strftime("%H:%M") %></strong>
+
+<br /><br />
+<strong>Comments:</strong>
+<br /><%= @session.description %>
+
+<br /><br />
+<strong>Attendees:</strong>
+<br />tito<br />cholo<br />pepe
+
+<br /><br />
+<%= link_to 'Back', sessions_path %>
