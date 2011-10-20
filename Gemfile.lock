@@ -147,6 +147,7 @@ PLATFORMS
 
 DEPENDENCIES
   activeadmin
+  bcrypt-ruby (~> 3.0.0)
   coffee-rails (~> 3.1.1)
   jquery-rails
   rails (= 3.1.1)

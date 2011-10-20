@@ -102,7 +102,7 @@ input, textarea, select {
 	float: left;
 	width: 800px;
 	height: 50px;
-	background: url(img03.gif) no-repeat left top;
+	background: url(img02.gif) no-repeat left top;
 }
 
 #menu ul {
@@ -138,12 +138,21 @@ input, textarea, select {
 	color: #000000;
 }
 
+/** UserNav */
+#user_nav {
+	width: 800px;
+	height: 2px;
+	margin: 0 auto;
+	padding-right: 5px;
+    text-align: right;
+}
+
 /** LOGO */
 #logo {
 	width: 800px;
-	height: 60px;
+	height: 50px;
 	margin: 0 auto;
-	padding: 20px 0 0 30px;
+	padding: 10px 0 0 30px;
 }
 
 #logo h1, #logo h2 {
@@ -184,7 +193,7 @@ input, textarea, select {
 #page {
 	width: 740px;
 	margin: 0 auto;
-	padding: 20px 30px 0px 30px;
+	padding: 20px 30px 20px 30px;
 	background: #2A0F0F;
 }
 
@@ -221,3 +230,5 @@ html>body #footer {
 @import "scaffolds.css.scss";
 @import "home.css.scss";
 @import "sessions.css.scss";
+@import "users.css.scss";
+@import "authentication.css.scss";

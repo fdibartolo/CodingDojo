@@ -1,0 +1,41 @@
+<h1>Sign Up and become a student teacher in the next dojo</h1>
+
+<br />
+<%= form_for @user do |f| %>
+  <% if @user.errors.any? %>
+    <div class="error_messages">
+      <h2>Form is invalid</h2>
+      <ul>
+        <% for message in @user.errors.full_messages %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <p>
+    <%= f.label :first_name %><br />
+    <%= f.text_field :first_name %>
+  </p>
+  <p>
+    <%= f.label :last_name %><br />
+    <%= f.text_field :last_name %>
+  </p>
+  <p>
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </p>
+  <p>
+    <%= f.label :enterprise_id %>  (we ask for the Eid in order to easily reach out to you)<br />
+    <%= f.text_field :enterprise_id %>
+  </p>
+  <p>
+    <%= f.label :password %>  (even though it will be stored encrypted, we recommend not to use your real Eid password)<br />
+    <%= f.password_field :password %>
+  </p>
+  <p>
+    <%= f.label :password_confirmation %><br />
+    <%= f.password_field :password_confirmation %>
+  </p>
+  <p><%= f.submit "Sign Up!" %></p>
+<% end %>
+

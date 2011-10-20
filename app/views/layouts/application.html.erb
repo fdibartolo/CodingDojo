@@ -11,13 +11,22 @@
 <div id="header">
 	<div id="menu">
 		<ul>
-
 			<li class="current_page_item"><a href="/home">home</a></li>
 			<li><a href="/sessions">sessions</a></li>
 			<li><a href="#">photos</a></li>
 			<li class="last"><a href="#">about</a></li>
 		</ul>
-	</div>
+    </div>
+</div>
+
+<div id="user_nav">
+    <% if current_user %>
+        Logged in as <%= current_user.enterprise_id %>.
+        <%= link_to "Log out", logout_path %>
+    <% else %>
+        <%= link_to "Sign up", signup_path %> or
+        <%= link_to "log in", login_path %>
+    <% end %>
 </div>
 
 <div id="logo">
@@ -28,11 +37,15 @@
 <div id="banner"></div>
 
 <div id="page">
+    <% flash.each do |name, msg| %>
+        <%= content_tag :div, msg, :id => "flash_#{name}" %>
+    <% end %>
+
     <%= yield %>
 </div>
 
 <div id="footer">
-	<p id="legal">( c ) 2011. All Rights Reserved. ATAG Enterprise Architecture</p>
+	<p id="legal">( c ) 2011. ATAG. All Rights Reserved.</p>
 </div>
 
 </body>

@@ -31,7 +31,7 @@ ActiveAdmin.setup do |config|
 
   # == User Authentication
   #
-  # Active Admin will automatically call an authentication 
+  # Active Admin will automatically call an authentications
   # method in a before filter of all controller actions to 
   # ensure that there is a currently logged in admin user.
   #
