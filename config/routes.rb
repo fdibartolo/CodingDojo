@@ -2,6 +2,7 @@ TrainingPortal::Application.routes.draw do
   get "login" => "authentications#new", :as => "login"
   get "logout" => "authentications#destroy", :as => "logout"
   get "signup" => "users#new", :as => "signup"
+  get "register_to_dojo" => "sessions#register", :as => "register_to_dojo"
 
   root :to => "home#index"
 

@@ -21,4 +21,16 @@ class SessionsController < ApplicationController
       format.json { render json: @session }
     end
   end
+
+  def register
+    if session[:user_id]
+      open_session = Session.where(:status => "Open").first!
+      user = User.find_by_id(session[:user_id])
+      open_session.users << user
+
+      redirect_to "/home", :notice => "Thank you for registering to the dojo! You will receive assistance confirmation based on the seats available."
+    else
+      redirect_to login_path
+    end
+  end
 end

@@ -9,6 +9,8 @@ class User < ActiveRecord::Base
   validates_uniqueness_of :enterprise_id
   validates_presence_of :email
 
+  has_and_belongs_to_many :sessions
+
   def encrypt_password
     if password.present?
       self.password_salt = BCrypt::Engine.generate_salt

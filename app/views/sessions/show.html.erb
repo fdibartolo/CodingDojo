@@ -1,5 +1,3 @@
-<p id="notice"><%= notice %></p>
-
 <h1>about this coding dojo</h1>
 
 <br />
@@ -20,7 +18,9 @@ End time:
 
 <br /><br />
 <strong>Attendees:</strong>
-<br />tito<br />cholo<br />pepe
+<% @session.users.each do |user| %>
+    <br /><%= user.enterprise_id %>
+<% end %>
 
 <br /><br />
 <%= link_to 'Back', sessions_path %>

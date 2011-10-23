@@ -20,5 +20,10 @@ End time:
 
 <br />
 <br />
-<%= link_to "Register now!!", login_path %>
+<% if current_user_registered? %>
+    You are already registered to the dojo. Will confirm assistance soon!!
+<% else %>
+    <%= link_to "Register now!!", register_to_dojo_path %>
+<% end %>
+
 <br />
