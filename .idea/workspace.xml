@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="406cd359-094f-4d4d-8565-9a945bec9857" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/TrainingPortal.iml" afterPath="$PROJECT_DIR$/.idea/TrainingPortal.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
     </list>
     <ignored path="TrainingPortal.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,10 +32,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="application.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="38" selection-start="103" selection-end="103" vertical-scroll-proportion="0.1744186">
+            <state line="9" column="29" selection-start="193" selection-end="193" vertical-scroll-proportion="-5.625">
               <folding />
             </state>
           </provider>
@@ -76,10 +77,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="36" selection-start="172" selection-end="172" vertical-scroll-proportion="0.0">
+            <state line="9" column="18" selection-start="192" selection-end="192" vertical-scroll-proportion="0.3668478">
               <folding />
             </state>
           </provider>
@@ -97,7 +98,7 @@
       <file leaf-file-name="Gemfile.lock" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Gemfile.lock">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="139" column="26" selection-start="3282" selection-end="3282" vertical-scroll-proportion="0.0">
+            <state line="140" column="26" selection-start="3308" selection-end="3308" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -908,7 +909,7 @@
     <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
     <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="config.assets.compile set to true for production" />
+    <option name="LAST_COMMIT_MESSAGE" value="moved sass gem up in hierarchy to get loaded first" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -930,6 +931,7 @@
     <MESSAGE value="gemfile.lock postgresql for heroku prod" />
     <MESSAGE value="moved sass gem outside assets since activeadmin fails upon deploying to heroku" />
     <MESSAGE value="config.assets.compile set to true for production" />
+    <MESSAGE value="moved sass gem up in hierarchy to get loaded first" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1021,7 +1023,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile.lock">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="139" column="26" selection-start="3282" selection-end="3282" vertical-scroll-proportion="0.0">
+        <state line="140" column="26" selection-start="3308" selection-end="3308" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1033,16 +1035,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="36" selection-start="172" selection-end="172" vertical-scroll-proportion="0.0">
+        <state line="9" column="29" selection-start="193" selection-end="193" vertical-scroll-proportion="-5.625">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+    <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="38" selection-start="103" selection-end="103" vertical-scroll-proportion="0.1744186">
+        <state line="9" column="18" selection-start="192" selection-end="192" vertical-scroll-proportion="0.3668478">
           <folding />
         </state>
       </provider>
