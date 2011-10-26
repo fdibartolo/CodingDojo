@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="406cd359-094f-4d4d-8565-9a945bec9857" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/authentication.js.coffee" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/sign_up.js.coffee" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/users.js.coffee" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/TrainingPortal.iml" afterPath="$PROJECT_DIR$/.idea/TrainingPortal.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/home_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/home_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/index.html.erb" afterPath="$PROJECT_DIR$/app/views/home/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
     </list>
     <ignored path="TrainingPortal.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -53,10 +50,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home_controller.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="home_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/home_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="4" selection-start="239" selection-end="239" vertical-scroll-proportion="0.36764705">
+            <state line="10" column="29" selection-start="239" selection-end="239" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -98,10 +95,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="16" selection-start="157" selection-end="157" vertical-scroll-proportion="0.0">
+            <state line="27" column="19" selection-start="572" selection-end="572" vertical-scroll-proportion="0.25735295">
               <folding />
             </state>
           </provider>
@@ -154,10 +151,10 @@
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss" />
         <option value="$PROJECT_DIR$/Gemfile.lock" />
         <option value="$PROJECT_DIR$/config/environments/production.rb" />
-        <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/views/home/index.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/home_controller.rb" />
+        <option value="$PROJECT_DIR$/Gemfile" />
       </list>
     </option>
   </component>
@@ -948,7 +945,7 @@
     <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
     <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="more of activeadmin crap for heroku" />
+    <option name="LAST_COMMIT_MESSAGE" value="handle open sessions if any at home page" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -972,6 +969,7 @@
     <MESSAGE value="config.assets.compile set to true for production" />
     <MESSAGE value="moved sass gem up in hierarchy to get loaded first" />
     <MESSAGE value="more of activeadmin crap for heroku" />
+    <MESSAGE value="handle open sessions if any at home page" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1047,13 +1045,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="16" selection-start="157" selection-end="157" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile.lock">
       <provider selected="true" editor-type-id="text-editor">
         <state line="147" column="16" selection-start="3394" selection-end="3394" vertical-scroll-proportion="0.0">
@@ -1084,7 +1075,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/home_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="4" selection-start="239" selection-end="239" vertical-scroll-proportion="0.36764705">
+        <state line="10" column="29" selection-start="239" selection-end="239" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="19" selection-start="572" selection-end="572" vertical-scroll-proportion="0.25735295">
           <folding />
         </state>
       </provider>
