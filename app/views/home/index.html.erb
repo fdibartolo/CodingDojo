@@ -1,29 +1,33 @@
-<h1>next session</h1>
+<% if @has %>
+    <h1>next session</h1>
 
-<br />
-Date:
-<strong><%= @open_session.date %></strong>
+    <br />
+    Date:
+    <strong><%= @open_session.date %></strong>
 
-<br />
-Start time:
-<strong><%= @open_session.start_time.strftime("%H:%M") %></strong>
+    <br />
+    Start time:
+    <strong><%= @open_session.start_time.strftime("%H:%M") %></strong>
 
-<br />
-End time:
-<strong><%= @open_session.end_time.strftime("%H:%M") %></strong>
+    <br />
+    End time:
+    <strong><%= @open_session.end_time.strftime("%H:%M") %></strong>
 
-<br />
-<br />
-<strong>Comments:</strong>
-<br />
-<%= @open_session.description %>
+    <br />
+    <br />
+    <strong>Comments:</strong>
+    <br />
+    <%= @open_session.description %>
 
-<br />
-<br />
-<% if current_user_registered? %>
-    You are already registered to the dojo. Will confirm assistance soon!!
+    <br />
+    <br />
+    <% if current_user_registered? %>
+        You are already registered to the dojo. Will confirm assistance soon!!
+    <% else %>
+        <%= link_to "Register now!!", register_to_dojo_path %>
+    <% end %>
 <% else %>
-    <%= link_to "Register now!!", register_to_dojo_path %>
+    <h1>no open sessions yet, stay tuned!</h1>
 <% end %>
 
 <br />
