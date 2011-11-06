@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="406cd359-094f-4d4d-8565-9a945bec9857" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20111105200729_add_active_admin_user_and_remove_default.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/admin/dashboards.rb" afterPath="$PROJECT_DIR$/app/admin/dashboards.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/index.html.erb" afterPath="$PROJECT_DIR$/app/views/home/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
     </list>
     <ignored path="TrainingPortal.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -82,7 +78,7 @@
       <file leaf-file-name="dashboards.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/admin/dashboards.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="18" selection-start="598" selection-end="598" vertical-scroll-proportion="0.6940874">
+            <state line="16" column="22" selection-start="543" selection-end="543" vertical-scroll-proportion="0.6169666">
               <folding />
             </state>
           </provider>
@@ -884,7 +880,7 @@
     <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
     <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="sqllite set only for dev" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add new activeadmin account, and remove default&#10;Customize dashboard" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -910,6 +906,7 @@
     <MESSAGE value="more of activeadmin crap for heroku" />
     <MESSAGE value="handle open sessions if any at home page" />
     <MESSAGE value="sqllite set only for dev" />
+    <MESSAGE value="Add new activeadmin account, and remove default&#10;Customize dashboard" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1018,7 +1015,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/admin/dashboards.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="18" selection-start="598" selection-end="598" vertical-scroll-proportion="0.6940874">
+        <state line="16" column="22" selection-start="543" selection-end="543" vertical-scroll-proportion="0.6169666">
           <folding />
         </state>
       </provider>
