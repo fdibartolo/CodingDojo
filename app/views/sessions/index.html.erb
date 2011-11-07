@@ -9,7 +9,7 @@
 
 <% @sessions.each do |session| %>
   <tr>
-    <td><%= session.date.strftime("%A, %B %d %Y") %></td>
+    <td><%= session.date %></td>
     <td><%= link_to 'View details...', session %></td>
   </tr>
 <% end %>
