@@ -18,10 +18,10 @@ ActiveAdmin::Dashboards.build do
       column "Signed up people so far..." do |session|
         table_for session.users do
           column do |user|
-            user.first_name + " " + user.last_name + " (" + user.enterprise_id + ")"
+            "#{user.first_name} #{user.last_name} (#{user.enterprise_id})"
           end
-          column do
-            link_to "click to unregister this user!", signup_path
+          column do |user|
+            link_to "click to unregister this user!", :controller => "/sessions", :action => "unregister", :id => user.id
           end
         end
       end

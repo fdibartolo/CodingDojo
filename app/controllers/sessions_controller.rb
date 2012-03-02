@@ -33,4 +33,17 @@ class SessionsController < ApplicationController
       redirect_to login_path
     end
   end
+  
+  def unregister
+    open_session = Session.where(:status => "Open").first
+    #open_session.user_ids.delete_if {|id| id == params[:id]}
+    user_to_remove = User.find(params[:id])
+    open_session.users.destroy(user_to_remove)
+    
+    if open_session.save
+      redirect_to "/admin"
+    else
+      redirect_to root_path
+    end
+  end
 end
