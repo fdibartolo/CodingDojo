@@ -6,17 +6,24 @@ ActiveAdmin::Dashboards.build do
         link_to session.date.strftime("%A, %B %d %Y"), [:admin, session] #Monday, September 23 2011
       end
 
-      column :start_time do |session|
-        session.start_time.strftime("%H:%M")
-      end
+      #column "Signed up people so far..." do |session|
+      #  #session.users.find_all {|u| u.enterprise_id }
+      #  attendees = []
+      #  session.users.each do |user|
+      #    attendees << user.enterprise_id
+      #  end
+      #  attendees.to_sentence()
+      #end
 
       column "Signed up people so far..." do |session|
-        #session.users.find_all {|u| u.enterprise_id }
-        attendees = []
-        session.users.each do |user|
-          attendees << user.enterprise_id
+        table_for session.users do
+          column do |user|
+            "#{user.first_name} #{user.last_name} (#{user.enterprise_id})"
+          end
+          column do |user|
+            link_to "click to unregister this user!", :controller => "/sessions", :action => "unregister", :id => user.id
+          end
         end
-        attendees.to_sentence()
       end
     end
   end
