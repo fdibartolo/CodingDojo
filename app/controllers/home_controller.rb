@@ -1,13 +1,6 @@
 class HomeController < ApplicationController
   def index
-    open_sessions = Session.where(:status => "Open")
-
-    if open_sessions.count > 0
-      @open_session = open_sessions.first!
-      @has = true
-    else
-      @has = false
-    end
+    @open_session = Session.get_upcoming_open_session
 
     respond_to do |format|
       format.html # index.html.erb

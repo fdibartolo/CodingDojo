@@ -23,9 +23,11 @@ group :test do
   # Pretty printed test output
   gem 'turn', :require => false
 	gem 'rake' # needed to run CI box with Travis
+	gem 'capybara', '1.1.2'
+  gem 'spork', '~> 0.9.0.rc'
+	gem 'factory_girl_rails', '1.4.0'
 end
 
 group :production do
-  #gems specifically for Heroku go here
   gem "pg"
 end
