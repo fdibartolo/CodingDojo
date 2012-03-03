@@ -7,3 +7,6 @@ test:
   adapter: sqlite3
   database: ":memory:"
   timeout: 500
+  
+before_script:
+  - rake db:migrate RAILS_ENV="test"
