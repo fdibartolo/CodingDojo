@@ -168,6 +168,7 @@ DEPENDENCIES
   meta_search (>= 1.1.0.pre)
   pg
   rails (= 3.1.1)
+  rake
   rspec-rails (= 2.8.1)
   sass-rails (~> 3.1.4)
   sqlite3

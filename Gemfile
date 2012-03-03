@@ -22,6 +22,7 @@ gem 'jquery-rails'
 group :test do
   # Pretty printed test output
   gem 'turn', :require => false
+	gem 'rake' # needed to run CI box with Travis
 end
 
 group :production do
