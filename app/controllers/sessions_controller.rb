@@ -2,7 +2,6 @@ class SessionsController < ApplicationController
   # GET /sessions
   # GET /sessions.json
   def index
-    #@sessions = Session.all
     @sessions = Session.where(:status => "Closed")
 
     respond_to do |format|
@@ -23,27 +22,31 @@ class SessionsController < ApplicationController
   end
 
   def register
-    if session[:user_id]
-      open_session = Session.where(:status => "Open").first!
-      user = User.find_by_id(session[:user_id])
-      open_session.users << user
-
-      redirect_to "/home", :notice => "Thank you for registering to the dojo! You will receive assistance confirmation based on the seats available."
-    else
+    if not session[:user_id]
       redirect_to login_path
+      return
+    end  
+    
+    open_session = Session.get_upcoming_open_session
+      
+    if not open_session
+      redirect_to "/home"
+      return
     end
+    
+    user = User.find_by_id(session[:user_id])
+    open_session.users << user unless open_session.users.include? user
+
+    redirect_to "/home", :notice => "Thank you for registering to the dojo! You will receive assistance confirmation based on the seats available."
   end
   
   def unregister
-    open_session = Session.where(:status => "Open").first
-    #open_session.user_ids.delete_if {|id| id == params[:id]}
+    open_session = Session.get_upcoming_open_session
+    
     user_to_remove = User.find(params[:id])
     open_session.users.destroy(user_to_remove)
     
-    if open_session.save
-      redirect_to "/admin"
-    else
-      redirect_to root_path
-    end
+    open_session.save
+    redirect_to "/admin"
   end
 end
