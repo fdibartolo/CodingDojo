@@ -1,17 +1,30 @@
 require 'spec_helper'
 
 describe "Home pages" do
-  describe "index view" do
-    it "should display info about upcoming open session" do
-      FactoryGirl.create(:session)
-      visit root_path
-      page.should have_selector('h1', text: 'next session')
-    end
-
-    it "should display 'stay tunned' when no sessions are open" do
+  describe "index view with no upcoming open session" do
+    it "should display 'stay tunned' banner" do
       FactoryGirl.create(:session, :status => "Closed")
       visit root_path
       page.should have_selector('h1', text: 'no open sessions yet, stay tuned!')
     end    
+  end
+
+  describe "index view with upcoming open session" do
+    before :each do
+      FactoryGirl.create(:session)
+      visit root_path
+    end
+
+    it "should display info about it" do
+      page.should have_selector('h1', text: 'next session')
+    end
+
+    it "should display registration link for an unregistered user" do
+      
+    end
+
+    it "should display 'already registered' for a registered user" do
+      
+    end
   end
 end
