@@ -18,13 +18,5 @@ describe "Home pages" do
     it "should display info about it" do
       page.should have_selector('h1', text: 'next session')
     end
-
-    it "should display registration link for an unregistered user" do
-      
-    end
-
-    it "should display 'already registered' for a registered user" do
-      
-    end
   end
 end
