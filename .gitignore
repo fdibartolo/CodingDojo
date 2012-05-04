@@ -6,3 +6,4 @@ tmp/
 .idea/
 *.tmproj
 .rspec
+.DS_Store
