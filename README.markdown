@@ -1,4 +1,4 @@
-#Accenture ATAG Coding Dojos Application
+#ATAG Coding Dojos Application
 
 This is ruby on rails app, used for people to register to our coding dojos...
 
